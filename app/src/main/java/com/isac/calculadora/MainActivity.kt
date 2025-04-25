@@ -29,19 +29,23 @@ class MainActivity : AppCompatActivity() {
             val generoSelecionado = binding.spinnerGenero.selectedItem as String
             var idade = binding.textoDgtidade.text.toString().toLongOrNull()
             var resultado: Long
+            var res: Long
             if (idade != null){
 
 
                 if (generoSelecionado.trim()=="masculino"){
                     resultado = 65 - idade
+                    res = idade - 65
 
 
 
                 }else{
                     resultado = 62 - idade
+                    res = idade - 62
                 }
                 if (idade > 65){
-                    binding.textVerResultado.text="parabens, vc aposentou!!!!!"
+
+                    binding.textVerResultado.text="parabens, vc se aposentou há $res anos"
                 }else{
                     binding.textVerResultado.text="ainda falta $resultado anos para sua aposentadoria"
 
