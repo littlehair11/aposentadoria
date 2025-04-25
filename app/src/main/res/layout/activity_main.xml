@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="25dp"
+    >
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/spinner_genero"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:hint="Digite sua idade: "
+        android:id="@+id/texto_dgtidade"
+        android:inputType="number"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/button_calcular"
+        android:text="Calcular"
+        android:textSize="25dp"
+        android:fontFamily="@font/a1"
+        android:backgroundTint="@color/black"
+        app:icon="@drawable/baseline_360_24"
+        android:layout_marginTop="5dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/text_ver_resultado"
+        tools:text="teste"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="425dp"
+        android:hint="Isac Victor Lima da Rocha"
+
+        />
+
+</LinearLayout>
