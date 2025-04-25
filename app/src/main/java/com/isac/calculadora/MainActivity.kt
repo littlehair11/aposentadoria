@@ -45,15 +45,18 @@ class MainActivity : AppCompatActivity() {
                 }
                 if (idade > 65){
 
-                    binding.textVerResultado.text="parabens, vc se aposentou há $res anos"
+                    binding.textVerResultado.text="parabens, você se aposentou há $res anos"
+                }else{
+                    binding.textVerResultado.text="ainda falta $resultado anos para sua aposentadoria"}
+                if (idade > 65){
+
+                    binding.textVerResultado.text="parabens, você se aposentou há $res anos"
                 }else{
                     binding.textVerResultado.text="ainda falta $resultado anos para sua aposentadoria"
 
                 }
 
 
-                //binding.textVerResultado.text="          BOA SORTE!        "
-                //binding.textVerResultado.text="              :)        "
 
             }else{
                 //mostra erro caso seja nulo
